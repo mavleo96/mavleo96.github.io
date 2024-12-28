@@ -6,7 +6,7 @@ subtitle: Graduate Student Researcher at <a href='https://stonybrook.edu'>Stony 
 
 profile:
   align: right
-  image: IMG_0199.jpg
+  image: profile_img.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>700 Health Sciences Drive</p>
