@@ -417,16 +417,14 @@ ninja.data = [{
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+    },{id: "news-i-am-pursuing-my-bachelor-of-technology-in-chemical-engineering-iit-madras",
+          title: 'I am pursuing my Bachelor of Technology in Chemical Engineering @ IIT Madras....',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-i-am-joining-marketing-analytics-team-at-anheuser-busch-inbev-as-associate-data-scientist",
+          title: 'I am joining Marketing Analytics Team at Anheuser-Busch InBev as Associate Data Scientist....',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-i-am-pursuing-my-master-of-science-in-computer-science-stony-brook-university-linkedin-post-here",
+          title: 'I am pursuing my Master of Science in Computer Science @ Stony Brook...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
