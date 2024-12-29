@@ -24,41 +24,41 @@
   "work": [
     {
       "name": "Anheuser-Busch InBev",
+      "location": "Bengaluru, India",
       "position": "Senior Data Scientist",
       "startDate": "2023-10-01",
       "endDate": "2024-06-12",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus."
     },
     {
       "name": "Anheuser-Busch InBev",
+      "location": "Bengaluru, India",
       "position": "Data Scientist",
       "startDate": "2021-09-01",
       "endDate": "2023-09-30",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus."
     },
     {
       "name": "Anheuser-Busch InBev",
+      "location": "Bengaluru, India",
       "position": "Associate Data Scientist",
       "startDate": "2020-08-03",
       "endDate": "2021-08-31",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus."
     },
     {
       "name": "Anheuser-Busch InBev",
+      "location": "Bengaluru, India",
       "position": "Project Intern",
       "startDate": "2023-09-01",
       "endDate": "2024-06-12",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus."
     }
   ],
   "education": [
     {
       "institution": "Stony Brook University",
-      "location": "Stony Brook, United States",
+      "location": "Stony Brook, US",
       "url": "https://stonybrook.edu/",
       "area": "Computer Science",
       "studyType": "Master of Science",
