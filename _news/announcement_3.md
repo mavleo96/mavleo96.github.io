@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-08-01 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+I am pursuing my Master of Science in Computer Science @ <a href="https://stonybrook.edu/">Stony Brook University</a>; <a href="https://www.linkedin.com/feed/update/urn:li:activity:7227362686198505472/">LinkedIn Post here!</a>

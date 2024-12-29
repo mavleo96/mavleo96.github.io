@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2016-08-22 00:00:00-0000
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I am pursuing my Bachelor of Technology in Chemical Engineering @ <a href="https://www.iitm.ac.in/">IIT Madras</a>.
