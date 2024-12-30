@@ -5,4 +5,5 @@ inline: true
 related_posts: false
 ---
 
-I am pursuing my Master of Science in Computer Science @ <a href="https://stonybrook.edu/">Stony Brook University</a>; <a href="https://www.linkedin.com/feed/update/urn:li:activity:7227362686198505472/">LinkedIn Post here!</a>
+I am pursuing my Master of Science in Computer Science @ <a href="https://stonybrook.edu/">Stony Brook University</a>
+<a href="https://www.linkedin.com/feed/update/urn:li:activity:7227362686198505472/">LinkedIn Post here!</a>
