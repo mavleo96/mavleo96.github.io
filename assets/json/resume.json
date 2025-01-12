@@ -161,26 +161,32 @@
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "projects": [
+      "name": "Computer Vision",
+      "icon": "fa-solid fa-tag"
+    },
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
-    }
+      "name": "Natural Language Processing",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Deep Learning",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Machine Learning",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Data Science",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Artificial Intelligence",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Reinforcement Learning",
+      "icon": "fa-solid fa-tag"
+    },
   ]
 }
