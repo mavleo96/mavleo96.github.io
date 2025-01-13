@@ -60,22 +60,22 @@
       "institution": "Stony Brook University",
       "location": "Stony Brook, US",
       "url": "https://stonybrook.edu/",
-      "area": "Computer Science",
-      "studyType": "Master of Science",
+      "studyType": "Master of Science in Computer Science",
       "startDate": "2024-08-26",
       "endDate": "2026-05-31",
       "score": "4/4",
+      "image": "assets/img/sbu-logo.jpg",
       "courses": ["Introduction to Computer Vision", "Natural Language Processing", "Sytems Fundamentals"]
     },
     {
       "institution": "Indian Institute of Technology Madras",
       "location": "Chennai, India",
       "url": "https://www.iitm.ac.in/",
-      "area": "Chemical Engineering",
-      "studyType": "Bachelor of Technology",
+      "studyType": "Bachelor of Technology in Chemical Engineering",
       "startDate": "2016-08-22",
       "endDate": "2020-07-17",
       "score": "8.01/10",
+      "image": "assets/img/iitm-logo.png",
       "courses": ["Multivariate Data Analysis", "Data-driven Modelling of Process", "Process Optimization", "Integer Optimization"]
     }
   ],
@@ -85,7 +85,8 @@
       "publisher": "Indian Journal of Science and Technology",
       "releaseDate": "2020-10-28",
       "url": "https://indjst.org/articles/prediction-of-ipl-matches-using-machine-learning-while-tackling-ambiguity-in-results",
-      "summary": "TBD"
+      "summary": "TBD",
+      "image": "assets/img/publication_preview/cricket-ball-tracking.gif"
     }
   ],
   "skills": [
