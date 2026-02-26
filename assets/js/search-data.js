@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "A collection of my projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -55,12 +55,17 @@ ninja.data = [{
           title: 'I am pursuing my Master of Science in Computer Science @ Stony Brook...',
           description: "",
           section: "News",},{id: "projects-promotion-optimization-engine",
-          title: 'promotion optimization engine',
+          title: 'Promotion Optimization Engine',
           description: "Hierarchical regression based model and optimization engine for promotion allocation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/promo-optimization-engine/";
+            },},{id: "projects-whisper-accent",
+          title: 'Whisper Accent',
+          description: "Conditioning via adaptive layer normalization for accent-aware English speech recognition",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/whisper-accent/";
             },},{id: "projects-yin-yang-classification",
-          title: 'yin yang classification',
+          title: 'Yin Yang Classification',
           description: "Visualizing Yin Yang data classification using various machine learning models",
           section: "Projects",handler: () => {
               window.location.href = "/projects/yin-yang-classification/";
