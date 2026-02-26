@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
           title: "publications",
           description: "",
           section: "Navigation",
@@ -82,9 +89,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-pursuing-my-master-of-science-in-computer-science-stony-brook-university-linkedin-post-here",
           title: 'I am pursuing my Master of Science in Computer Science @ Stony Brook...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-whisper-accent",
+          title: 'Whisper Accent',
+          description: "Conditioning via Adaptive Layer Normalization for Accent-Aware English Speech Recognition",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
