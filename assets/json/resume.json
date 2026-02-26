@@ -94,13 +94,7 @@
       "name": "Programming Languages",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python",
-        "R",
-        "C",
-        "C++",
-        "MATLAB"
-      ]
+      "keywords": ["Python", "R", "C", "C++", "MATLAB"]
     },
     {
       "name": "Modelling",
@@ -120,27 +114,13 @@
       "name": "Tools & Technologies",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Power BI/Tableau",
-        "Azure Databricks",
-        "Spark",
-        "Microsoft Excel",
-        "Microsoft Powerpoint"
-      ]
+      "keywords": ["Power BI/Tableau", "Azure Databricks", "Spark", "Microsoft Excel", "Microsoft Powerpoint"]
     },
     {
       "name": "Software Development & Integration",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Git",
-        "API Integration: FASTAPI",
-        "Docker",
-        "Kubernetes",
-        "Unit Testing: Pytest",
-        "CI/CD",
-        "Agile Development"
-      ]
+      "keywords": ["Git", "API Integration: FASTAPI", "Docker", "Kubernetes", "Unit Testing: Pytest", "CI/CD", "Agile Development"]
     }
   ],
   "languages": [
