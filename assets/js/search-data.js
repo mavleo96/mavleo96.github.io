@@ -89,9 +89,14 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-pursuing-my-master-of-science-in-computer-science-stony-brook-university-linkedin-post-here",
           title: 'I am pursuing my Master of Science in Computer Science @ Stony Brook...',
           description: "",
-          section: "News",},{id: "projects-whisper-accent",
+          section: "News",},{id: "projects-promotion-optimization-engine",
+          title: 'Promotion Optimization Engine',
+          description: "Hierarchical regression based model and optimization engine for promotion allocation",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/promo-optimization-engine/";
+            },},{id: "projects-whisper-accent",
           title: 'Whisper Accent',
-          description: "Conditioning via Adaptive Layer Normalization for Accent-Aware English Speech Recognition",
+          description: "Conditioning via adaptive layer normalization for accent-aware English speech recognition",
           section: "Projects",handler: () => {
               window.location.href = "/projects/whisper-accent/";
             },},{id: "projects-yin-yang-classification",
