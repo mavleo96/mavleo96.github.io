@@ -27,13 +27,13 @@ We present **Whisper-Accent**: an extension of pretrained Whisper that handles 2
 
 **Accent Classifier.** The encoder produces hidden states at every layer. We learn scalar fusion weights over all $$L$$ encoder layers plus the input embedding, yielding a weighted-average representation of shape $$(T, D)$$. A linear projection reduces dimensionality, and multi-head attention pooling (MHA-pool) collapses the temporal axis via a learnable query vector. The resulting fixed-length vector is passed to a linear classification head over $$A$$ accent classes.
 
-**Accent Embeddings.** A lookup table of $$A$$ trainable vectors maps a predicted accent label to a conditioning vector $$e \in \mathbb{R}^d$$. Ground-truth labels are used during training; predicted labels from the classifier are used at inference, making the system fully self-contained.
+**Accent Embeddings.** A lookup table of $$A$$ trainable vectors maps a predicted accent label to a conditioning vector $$e \in \mathbb{R}^{d/2}$$. Ground-truth labels are used during training; predicted labels from the classifier are used at inference, making the system fully self-contained.
 
 **Adaptive Layer Normalization.** AdaLN was popularized in class-conditional diffusion transformers as a way to condition generation on a class embedding without modifying the attention or feed-forward weights — the same principle we adopt here for accent conditioning. Every LayerNorm in the Whisper decoder is replaced by an AdaLN module:
 
-$$\text{AdaLN}(h, e) = \big(1 + \gamma(e)\big) \odot \text{LayerNorm}(h) + \beta(e)$$
+$$\text{AdaLN}(h, e) = \tilde{\gamma}(e) \odot \hat{h} + \tilde{\beta}(e)$$
 
-where $$\gamma(\cdot)$$ and $$\beta(\cdot)$$ are learned linear projections from the accent embedding. Projection weights are zero-initialized (following ControlNet), so AdaLN has no effect at the start of training. Bias projections are initialized to the pretrained LayerNorm $$\gamma$$ / $$\beta$$ values and frozen. All accents share the frozen backbone while accent-specific modulation is routed entirely through the normalization parameters. No encoder or decoder weights are modified, so the model's general transcription capability is fully preserved.
+where $$\hat{h} = \text{LayerNorm}(h)$$ is the normalized hidden state without scale or shift, and $$\tilde{\gamma}(e) = W_\gamma e + \gamma_0$$, $$\tilde{\beta}(e) = W_\beta e + \beta_0$$ are affine projections of the accent embedding. The projection weights $$W_\gamma, W_\beta$$ are zero-initialized and the biases are set to the pretrained LayerNorm parameters $$(\gamma_0, \beta_0)$$; so at initialization, AdaLN exactly reproduces the original Whisper LayerNorm behavior (following ControlNet). Because the backbone is entirely frozen, the model preserves Whisper's original generalization capability for accents outside the training distribution.
 
 ---
 
