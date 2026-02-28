@@ -54,7 +54,12 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-pursuing-my-master-of-science-in-computer-science-stony-brook-university-linkedin-post-here",
           title: 'I am pursuing my Master of Science in Computer Science @ Stony Brook...',
           description: "",
-          section: "News",},{id: "projects-promotion-optimization-engine",
+          section: "News",},{id: "projects-llava-meets-alternating-attention",
+          title: 'LLaVA meets Alternating Attention',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/llava-alternating-attn/";
+            },},{id: "projects-promotion-optimization-engine",
           title: 'Promotion Optimization Engine',
           description: "Hierarchical regression based model and optimization engine for promotion allocation",
           section: "Projects",handler: () => {
