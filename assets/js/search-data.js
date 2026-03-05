@@ -54,7 +54,17 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-pursuing-my-master-of-science-in-computer-science-stony-brook-university-linkedin-post-here",
           title: 'I am pursuing my Master of Science in Computer Science @ Stony Brook...',
           description: "",
-          section: "News",},{id: "projects-llava-meets-alternating-attention",
+          section: "News",},{id: "projects-cross-shard-consensus",
+          title: 'Cross-Shard Consensus',
+          description: "Multi-cluster distributed transaction processor with Paxos consensus and 2-phase commit for atomic cross-shard transactions in Go",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cross-shard-consensus/";
+            },},{id: "projects-linear-pbft",
+          title: 'Linear PBFT',
+          description: "Linearizable Byzantine fault-tolerant consensus protocol implementation in Go",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/linear-pbft/";
+            },},{id: "projects-llava-meets-alternating-attention",
           title: 'LLaVA meets Alternating Attention',
           description: "",
           section: "Projects",handler: () => {
