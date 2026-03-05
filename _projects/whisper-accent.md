@@ -4,7 +4,7 @@ title: Whisper Accent
 description: Conditioning via adaptive layer normalization for accent-aware English speech recognition
 img: assets/img/projects/whisper-accent/asr_thumbnail.png
 importance: 1
-category: work
+category: "machine learning"
 related_publications: false
 ---
 

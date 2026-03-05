@@ -5,5 +5,5 @@ description: Hierarchical regression based model and optimization engine for pro
 img: assets/img/projects/promo_optimization_engine.png
 redirect: https://github.com/mavleo96/promo-optimization-engine
 importance: 3
-category: work
+category: "machine learning"
 ---
