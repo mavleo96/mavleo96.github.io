@@ -74,6 +74,11 @@ ninja.data = [{
           description: "Hierarchical regression based model and optimization engine for promotion allocation",
           section: "Projects",handler: () => {
               window.location.href = "/projects/promo-optimization-engine/";
+            },},{id: "projects-ultimate-tic-tac-toe",
+          title: 'Ultimate Tic Tac Toe',
+          description: "RL agent playing Ultimate Tic Tac Toe",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ultimate-tic-tac-toe/";
             },},{id: "projects-whisper-accent",
           title: 'Whisper Accent',
           description: "Conditioning via adaptive layer normalization for accent-aware English speech recognition",
