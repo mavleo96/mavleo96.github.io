@@ -85,38 +85,38 @@ Improvements are observed across all 23 accent classes. The classifier achieves 
 <div class="row justify-content-center">
   <div class="col-sm-6" markdown="1">
 
-| Accent         | WER ↓ | Accent Acc. ↑ |  n  |
-| :------------- | :---: | :-----------: | :-: |
-| English        | 5.2%  |     95.7%     | 442 |
-| American       | 1.2%  |     97.7%     | 263 |
-| Scottish       | 6.9%  |     94.9%     | 235 |
-| Irish          | 9.7%  |     97.4%     | 152 |
-| Canadian       | 0.8%  |    100.0%     | 90  |
-| Northern Irish | 2.8%  |     94.5%     | 73  |
-| Indian         | 61.4% |    100.0%     | 51  |
-| Spanish        | 14.8% |     95.7%     | 46  |
-| Dutch          | 17.2% |    100.0%     | 35  |
-| Polish         | 14.8% |     96.8%     | 31  |
-| Italian        | 8.6%  |     86.2%     | 29  |
-| French         | 21.8% |     73.1%     | 26  |
+| Accent         |      WER ↓      | Accent Acc. ↑ |  n  |
+| :------------- | :-------------: | :-----------: | :-: |
+| English        |  5.2% (↓0.3pp)  |     95.7%     | 442 |
+| American       |  1.2% (↓0.4pp)  |     97.7%     | 263 |
+| Scottish       |  6.9% (↓1.2pp)  |     94.9%     | 235 |
+| Irish          |  9.7% (↓2.0pp)  |     97.4%     | 152 |
+| Canadian       |  0.8% (↓1.4pp)  |    100.0%     | 90  |
+| Northern Irish |  2.8% (↓0.2pp)  |     94.5%     | 73  |
+| Indian         | 61.4% (↓0.9pp)  |    100.0%     | 51  |
+| Spanish        | 14.8% (↓4.8pp)  |     95.7%     | 46  |
+| Dutch          | 17.2% (↓18.3pp) |    100.0%     | 35  |
+| Polish         | 14.8% (↓2.6pp)  |     96.8%     | 31  |
+| Italian        |  8.6% (↓8.3pp)  |     86.2%     | 29  |
+| German         | 18.1% (↓11.0pp) |     96.3%     | 27  |
 
   </div>
   <div class="col-sm-6" markdown="1">
 
-| Accent      |   WER ↓   | Accent Acc. ↑ |    n     |
-| :---------- | :-------: | :-----------: | :------: |
-| Romanian    |   14.3%   |     91.3%     |    23    |
-| Estonian    |   12.4%   |    100.0%     |    13    |
-| Vietnamese  |   32.3%   |    100.0%     |    14    |
-| German      |   18.1%   |     96.3%     |    27    |
-| Czech       |   10.1%   |     94.7%     |    19    |
-| Slovak      |   7.3%    |     94.1%     |    17    |
-| Hungarian   |   9.7%    |     83.3%     |    18    |
-| Finnish     |   8.6%    |     81.8%     |    11    |
-| Lithuanian  |   2.7%    |    100.0%     |    2     |
-| Croatian    |   21.8%   |    100.0%     |    2     |
-| Slovene     |   6.1%    |     0.0%      |    1     |
-| **Overall** | **13.4%** |   **95.7%**   | **1620** |
+| Accent      |       WER ↓        | Accent Acc. ↑ |    n     |
+| :---------- | :----------------: | :-----------: | :------: |
+| French      |   21.8% (↓3.2pp)   |     73.1%     |    26    |
+| Romanian    |  14.3% (↓18.6pp)   |     91.3%     |    23    |
+| Czech       |   10.1% (↓6.0pp)   |     94.7%     |    19    |
+| Hungarian   |   9.7% (↓8.8pp)    |     83.3%     |    18    |
+| Slovak      |   7.3% (↓9.5pp)    |     94.1%     |    17    |
+| Vietnamese  |   32.3% (↓3.9pp)   |    100.0%     |    14    |
+| Estonian    |   12.4% (↓6.5pp)   |    100.0%     |    13    |
+| Finnish     |   8.6% (↓5.1pp)    |     81.8%     |    11    |
+| Lithuanian  |   2.7% (↓2.7pp)    |    100.0%     |    2     |
+| Croatian    |  21.8% (↓10.9pp)   |    100.0%     |    2     |
+| Slovene     |   6.1% (↓9.1pp)    |     0.0%      |    1     |
+| **Overall** | **13.4%** (↓4.1pp) |   **95.7%**   | **1620** |
 
   </div>
 </div>
@@ -156,15 +156,15 @@ Random conditioning still outperforms vanilla Whisper (16.6% / 15.1% vs. 17.6% /
   </div>
 </div>
 <div class="caption">
-  Figure 2: Left — cosine similarity matrix of the 23 learned accent embeddings (whisper-accent-medium.en). Right — UMAP projection of the same embeddings. Broad groupings emerge from WER supervision alone, but low-resource accents show clear collapse artifacts.
+  Figure 2: Left — cosine similarity matrix of the 23 learned accent embeddings (whisper-accent-medium.en). Right — UMAP projection of the same embeddings.
 </div>
 
-The cosine similarity heatmap shows a clear block-diagonal structure: native English varieties form the tightest cluster, followed by Central and Western European accents, and a Baltic/Slavic/Finnic group — all emerging from ASR loss alone, without explicit phonological supervision.
+The cosine similarity heatmap reveals three blocks: native English varieties form the tightest cluster reflecting genuine phonological coherence. Western European accents (Dutch, German, French, Polish) and Baltic/Slavic/Finnic accents (Hungarian, Czech, Slovak, etc.) cluster internally with nearly identical similarity, despite phonological distance. This counterintuitive grouping emerges from training data distribution—accents with similar sample sufficiency converge in embedding space regardless of typology.
 
-The UMAP corroborates this, with three well-separated regions. Notable exceptions: Romanian sits in isolation between the main clusters, consistent with its mixed Romance-Slavic typology; Indian and Vietnamese project near the native English region despite their phonological distance, plausibly a data scarcity effect rather than a learned structural similarity.
+The UMAP projection corroborates the three-region structure but reveals critical collapse patterns. Native English varieties occupy a coherent region. Western European and Baltic/Slavic accents project into spatially proximate clusters, confirming their embedding equivalence. Notable failures: Indian and Vietnamese project into the native English region despite phonological distinctness, visible as spatial collapse in UMAP and high cosine similarity to native English. Romanian, by contrast, embeds apart from native English and separates in UMAP, anchored by phonologically similar peers in the Romance/Germanic L2 group. Low-resource accents without peer representation collapse into the majority cluster; those with peers maintain structure.
 
 ---
 
 ## Conclusion
 
-Whisper-Accent shows that phonetically diverse accents can be handled within a single model by conditioning a frozen Whisper decoder on per-accent embeddings via AdaLN, eliminating the need for per-accent adapters. The approach works well for data-rich accents, but the embedding analysis highlights a key limitation: the ASR objective alone cannot induce well-separated embeddings when training data is scarce or accent error profiles are similar. Addressing this will require contrastive embedding objectives and more balanced accent coverage than current datasets provide. Code and pretrained checkpoints are available at [github.com/mavleo96/whisper-accent](https://github.com/mavleo96/whisper-accent).
+Whisper-Accent shows that phonetically diverse accents can be handled within a single model by conditioning a frozen Whisper decoder on per-accent embeddings via AdaLN, eliminating the need for per-accent adapters. The approach works well for data-rich accents, but the embedding analysis highlights a key limitation: low-resource accents fail from phonological isolation, not data scarcity. Indian and Vietnamese achieve perfect classification yet minimal WER improvement, while Romanian with similar sample count achieves substantial improvement due to peer anchoring from Romance/Germanic L2 accents. Addressing this will require contrastive embedding objectives encouraging phonological grouping, combined with adding low-resource accents with shared L1 typology for peer representation. Code and pretrained checkpoints are available at [github.com/mavleo96/whisper-accent](https://github.com/mavleo96/whisper-accent).
