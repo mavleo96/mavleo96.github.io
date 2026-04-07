@@ -71,7 +71,7 @@ ninja.data = [{
               window.location.href = "/projects/llava-alternating-attn/";
             },},{id: "projects-optimal-polygon-triangulation",
           title: 'Optimal Polygon Triangulation',
-          description: "Finding the optimal triangulation of a polygon using dynamic programming",
+          description: "Optimal polygon triangulation via interval dynamic programming with memoization",
           section: "Projects",handler: () => {
               window.location.href = "/projects/optimal-triangulation/";
             },},{id: "projects-promotion-optimization-engine",
