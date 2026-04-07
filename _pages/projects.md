@@ -5,7 +5,7 @@ permalink: /projects/
 description: A collection of my projects.
 nav: true
 nav_order: 1
-display_categories: ["machine learning", "systems", "fun"]
+display_categories: ["machine learning", "systems and algorithms", "fun"]
 horizontal: false
 ---
 

@@ -5,5 +5,5 @@ description: Linearizable Byzantine fault-tolerant consensus protocol implementa
 img: assets/img/projects/linear_pbft.png
 redirect: https://github.com/mavleo96/linear-pbft
 importance: 1
-category: "systems"
+category: "systems and algorithms"
 ---
