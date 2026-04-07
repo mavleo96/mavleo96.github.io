@@ -69,6 +69,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/llava-alternating-attn/";
+            },},{id: "projects-optimal-polygon-triangulation",
+          title: 'Optimal Polygon Triangulation',
+          description: "Finding the optimal triangulation of a polygon using dynamic programming",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/optimal-triangulation/";
             },},{id: "projects-promotion-optimization-engine",
           title: 'Promotion Optimization Engine',
           description: "Hierarchical regression based model and optimization engine for promotion allocation",
