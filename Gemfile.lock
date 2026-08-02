@@ -261,7 +261,6 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tabs
   jekyll-toc
-  jekyll-twitter-plugin
   jemoji
   terser
   unicode_utils
