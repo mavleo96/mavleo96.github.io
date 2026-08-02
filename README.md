@@ -36,18 +36,18 @@ Site is served at `http://localhost:4000`.
 
 ## Content files
 
-| What | Where |
-|---|---|
-| Bio / homepage | `_pages/about.md` |
-| Publications | `_bibliography/papers.bib` |
-| Projects | `_projects/*.md` |
-| News items | `_news/*.md` |
-| Blog posts | `_posts/*.md` |
-| CV data | `assets/json/resume.json` |
-| CV page | `_pages/cv.md` |
-| Social links | `_data/socials.yml` |
-| Co-author links | `_data/coauthors.yml` |
-| Site config | `_config.yml` |
+| What            | Where                      |
+| --------------- | -------------------------- |
+| Bio / homepage  | `_pages/about.md`          |
+| Publications    | `_bibliography/papers.bib` |
+| Projects        | `_projects/*.md`           |
+| News items      | `_news/*.md`               |
+| Blog posts      | `_posts/*.md`              |
+| CV data         | `assets/json/resume.json`  |
+| CV page         | `_pages/cv.md`             |
+| Social links    | `_data/socials.yml`        |
+| Co-author links | `_data/coauthors.yml`      |
+| Site config     | `_config.yml`              |
 
 ---
 
