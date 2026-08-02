@@ -181,9 +181,6 @@ defaults:
 
 sass:
   style: compressed
-  silence_deprecations:
-    - import
-    - global-builtin
 
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
