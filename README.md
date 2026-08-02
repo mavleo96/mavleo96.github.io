@@ -63,6 +63,14 @@ Prettier also runs as a pre-commit hook via [`pre-commit`](https://pre-commit.co
 
 ---
 
+## Analytics
+
+Visitor tracking via [GoatCounter](https://www.goatcounter.com/) — privacy-friendly, no cookies.
+Dashboard at **https://mavleo96.goatcounter.com**.
+Only active in production (`JEKYLL_ENV=production`); not loaded during local dev.
+
+---
+
 ## License
 
 MIT

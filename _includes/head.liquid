@@ -187,3 +187,12 @@
 {% if page.tikzjax %}
   <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
 {% endif %}
+
+{% if jekyll.environment == 'production' %}
+  <!-- GoatCounter Analytics -->
+  <script
+    data-goatcounter="https://mavleo96.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+  ></script>
+{% endif %}
