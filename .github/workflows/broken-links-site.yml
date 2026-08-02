@@ -32,7 +32,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade jupyter
+          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹
@@ -40,7 +40,7 @@ jobs:
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Link Checker 🔗
-        uses: lycheeverse/lychee-action@v1.9.0
+        uses: lycheeverse/lychee-action@v2.1.0
         with:
           fail: true
           # only check local links
