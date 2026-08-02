@@ -136,11 +136,6 @@
   <script src="{{ '/assets/js/typograms.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if site.enable_tooltips %}
-  <!-- Tooltips -->
-  <script src="{{ '/assets/js/tooltips-setup.js' | relative_url | bust_file_cache }}"></script>
-{% endif %}
-
 {% if site.enable_medium_zoom %}
   <!-- Medium Zoom JS -->
   <script
@@ -210,31 +205,6 @@
       crossorigin="anonymous"
     ></script>
   {% endunless %}
-{% endif %}
-
-{% if site.enable_google_analytics %}
-  <!-- Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script defer src="{{ '/assets/js/google-analytics-setup.js' | relative_url | bust_file_cache }}"></script>
-{% endif %}
-
-{% if site.enable_cronitor_analytics %}
-  <!-- Cronitor RUM -->
-  <script async src="https://rum.cronitor.io/script.js"></script>
-  <script defer src="{{ '/assets/js/cronitor-analytics-setup.js' | relative_url | bust_file_cache }}"></script>
-{% endif %}
-{% if site.enable_pirsch_analytics %}
-  <script
-    defer
-    src="https://api.pirsch.io/pa.js"
-    id="pianjs"
-    data-code="{{ site.pirsch_analytics }}"
-  ></script>
-{% endif %}
-{% if site.enable_openpanel_analytics %}
-  <script defer src="{{ '/assets/js/open-panel-analytics-setup.js' | relative_url | bust_file_cache }}"></script>
-  <script async defer src="https://openpanel.dev/op1.js"></script>
 {% endif %}
 
 {% if site.enable_progressbar %}
@@ -311,6 +281,3 @@
   <script src="{{ '/assets/js/shortcut-key.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if site.newsletter.enabled %}
-  <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
-{% endif %}

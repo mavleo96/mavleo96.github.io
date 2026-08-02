@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 group :jekyll_plugins do
-    gem 'classifier-reborn'
     gem 'jekyll'
     gem 'jekyll-archives'
     gem 'jekyll-email-protect'
@@ -16,7 +15,6 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-tabs'
     gem 'jekyll-toc'
-    gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'terser'
     gem 'unicode_utils'
@@ -24,6 +22,4 @@ group :jekyll_plugins do
 end
 group :other_plugins do
     gem 'css_parser'
-    gem 'feedjira'
-    gem 'httparty'
 end
