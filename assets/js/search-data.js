@@ -23,14 +23,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-i-am-pursuing-my-bachelor-of-technology-in-chemical-engineering-iit-madras",
-          title: 'I am pursuing my Bachelor of Technology in Chemical Engineering @ IIT Madras....',
+        },{id: "news-i-graduated-with-my-bachelor-of-technology-in-chemical-engineering-iit-madras",
+          title: 'I graduated with my Bachelor of Technology in Chemical Engineering @ IIT Madras....',
           description: "",
           section: "News",},{id: "news-i-am-joining-marketing-analytics-team-at-anheuser-busch-inbev-as-associate-data-scientist",
           title: 'I am joining Marketing Analytics Team at Anheuser-Busch InBev as Associate Data Scientist....',
           description: "",
-          section: "News",},{id: "news-i-am-pursuing-my-master-of-science-in-computer-science-stony-brook-university-linkedin-post-here",
-          title: 'I am pursuing my Master of Science in Computer Science @ Stony Brook...',
+          section: "News",},{id: "news-i-graduated-with-my-master-of-science-in-computer-science-stony-brook-university",
+          title: 'I graduated with my Master of Science in Computer Science @ Stony Brook...',
           description: "",
           section: "News",},{id: "projects-cross-shard-consensus",
           title: 'Cross-Shard Consensus',
