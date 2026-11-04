@@ -63,6 +63,8 @@ Site is served at `http://localhost:4000`. GoatCounter analytics are skipped in 
 | Co-author links | `_data/coauthors.yml`      |
 | Site config     | `_config.yml`              |
 
+Project thumbnails (the `img:` field in `_projects/*.md`, stored under `assets/img/projects/`) use a **4:3 aspect ratio** (e.g. 1000×750). Nothing in the CSS enforces this, so a thumbnail with a different ratio makes its card a different height from the others.
+
 ---
 
 ## CI / CD
