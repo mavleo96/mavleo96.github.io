@@ -52,6 +52,11 @@ ninja.data = [{
           description: "Optimal polygon triangulation via interval dynamic programming with memoization",
           section: "Projects",handler: () => {
               window.location.href = "/projects/optimal-triangulation/";
+            },},{id: "projects-novel-object-pose-estimation",
+          title: 'Novel Object Pose Estimation',
+          description: "MS thesis on training-free novel object 6DoF pose estimation by fusing diffusion and DINOv2 features",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pose-estimation-thesis/";
             },},{id: "projects-promotion-optimization-engine",
           title: 'Promotion Optimization Engine',
           description: "Hierarchical regression based model and optimization engine for promotion allocation",
