@@ -3,7 +3,6 @@ layout: page
 title: Novel Object Pose Estimation
 description: MS thesis on training-free novel object 6DoF pose estimation by fusing diffusion and DINOv2 features
 img: assets/img/projects/pose_estimation_thesis.png
-github: https://github.com/mavleo96/pose-estimation
 importance: 1
 category: "machine learning"
 related_publications: false
